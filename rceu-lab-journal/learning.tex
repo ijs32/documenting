@@ -1,0 +1,112 @@
+% ============================================================
+%  LAB / LEARNING JOURNAL
+%  Build with latexmk (LaTeX Workshop's default recipe).
+%  Save the file and a PDF should appear; or press Ctrl+Alt+B.
+% ============================================================
+\documentclass[11pt]{article}
+
+% --- Page geometry: comfortable margins for reading/note-taking ---
+\usepackage[a4paper, margin=1in]{geometry}   % use letterpaper if you're in the US
+
+% --- Fonts / encoding (modern, sensible defaults) ---
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% --- Math: amsmath is the workhorse; amssymb/amsthm add symbols & theorem tools ---
+\usepackage{amsmath, amssymb, amsthm}
+
+% --- Units: siunitx handles numbers + units correctly, e.g. \SI{9.81}{m/s^2} ---
+\usepackage{siunitx}
+
+% --- Figures (the actual \includegraphics example below is commented out) ---
+\usepackage{graphicx}
+
+% --- Code listings: no external tools needed (unlike minted, which wants shell-escape) ---
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue!70!black},
+  commentstyle=\color{green!50!black},
+  stringstyle=\color{purple!70!black},
+  numbers=left, numberstyle=\tiny\color{gray},
+  breaklines=true, frame=single, language=Python
+}
+
+% --- hyperref makes the table of contents and references clickable. Load it LAST. ---
+\usepackage[colorlinks=true, linkcolor=blue!50!black, urlcolor=blue!50!black]{hyperref}
+
+% ------------------------------------------------------------
+%  Custom tools
+% ------------------------------------------------------------
+
+% An "entry" is just a section with a date built into the heading,
+% so each one shows up in the table of contents automatically.
+\newcommand{\entry}[2]{\section[#2]{#1\quad\textnormal{\textit{#2}}}}
+%   usage: \entry{2026-06-25}{What I learned about limits}
+
+% A box for results worth flagging. Definitions/claims you want to find later.
+\theoremstyle{definition}
+\newtheorem{keyresult}{Key result}
+
+% ------------------------------------------------------------
+\title{Learning Journal}
+\author{Ian Silber}                      % put your name here if you like
+\date{\today}                  % the cover date; entries carry their own dates
+
+\begin{document}
+\maketitle
+\tableofcontents               % grows automatically as you add entries
+\vspace{1em}\hrule\vspace{1em}
+
+% ============================================================
+%  ENTRIES  —  copy the block below to start a new one
+% ============================================================
+
+\entry{2026-06-25}{Catching up: What I have learned during my first month}
+
+A short paragraph on what you worked on. Inline math goes between dollar
+signs, like $f(x) = x^2$. Displayed equations get their own line:
+\begin{equation}
+  \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} = f'(x).
+  \label{eq:derivative}        % label lets you reference it later with \eqref
+\end{equation}
+You can point back to Equation~\eqref{eq:derivative} from anywhere.
+
+A physical quantity with units, typeset properly:
+the acceleration due to gravity is about \SI{9.81}{\meter\per\second\squared}.
+
+Flag something you want to find again:
+\begin{keyresult}
+  The derivative is the limit of the difference quotient, when that limit
+  exists. ``Differentiable'' means this limit exists at the point in question.
+\end{keyresult}
+
+A few things I'm still unsure about:
+\begin{itemize}
+  \item one open question
+  \item another thing to revisit
+\end{itemize}
+
+A bit of code I was working through:
+\begin{lstlisting}
+import numpy as np
+
+def difference_quotient(f, x, h=1e-6):
+    return (f(x + h) - f(x)) / h
+\end{lstlisting}
+
+% To add a figure later, drop the image file next to this .tex and uncomment:
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.6\linewidth]{my-plot.png}
+%   \caption{What the plot shows.}
+%   \label{fig:my-plot}
+% \end{figure}
+
+% ------------------------------------------------------------
+\entry{2026-06-26}{Next entry}
+
+Start writing here.
+
+\end{document}
