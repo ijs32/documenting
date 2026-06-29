@@ -42,6 +42,9 @@
 %  Custom tools
 % ------------------------------------------------------------
 
+% A top-level heading with no date — for standing sections like the papers list.
+\newcommand{\standing}[1]{\section{#1}}
+
 % An "entry" is just a section with a date built into the heading,
 % so each one shows up in the table of contents automatically.
 \newcommand{\entry}[2]{\section[#2]{#1\quad\textnormal{\textit{#2}}}}
@@ -349,5 +352,11 @@ Which generates the below sampling plan:
 \subentry{Radial Basis Functions: fixed and parametric}
 This should be below the figure
 \subentry{Kriging: A special form of RBF}
+
+\clearpage
+\standing{Papers}
+\subentry{Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}
+
+\subentry{Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}
 
 \end{document}

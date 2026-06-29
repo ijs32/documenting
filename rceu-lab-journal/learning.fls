@@ -1,8 +1,8 @@
-PWD /home/ian/code/documenting/rceu-lab-journal
+PWD /home/ian/code/research/documenting/rceu-lab-journal
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/ian/code/documenting/rceu-lab-journal/learning.tex
+INPUT /home/ian/code/research/documenting/rceu-lab-journal/learning.tex
 OUTPUT learning.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
