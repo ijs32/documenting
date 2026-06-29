@@ -43,11 +43,11 @@
 % ------------------------------------------------------------
 
 % A top-level heading with no date — for standing sections like the papers list.
-\newcommand{\standing}[1]{\section{#1}}
+\newcommand{\standing}[1]{\clearpage\section{#1}}
 
 % An "entry" is just a section with a date built into the heading,
 % so each one shows up in the table of contents automatically.
-\newcommand{\entry}[2]{\section[#2]{#1\quad\textnormal{\textit{#2}}}}
+\newcommand{\entry}[2]{\clearpage\section[#2]{#1\quad\textnormal{\textit{#2}}}}
 %   usage: \entry{2026-06-25}{What I learned about limits}
 
 % A sub-entry: a subsection that nests under the current entry.
@@ -353,7 +353,69 @@ Which generates the below sampling plan:
 This should be below the figure
 \subentry{Kriging: A special form of RBF}
 
-\clearpage
+\begin{definition}[Stochastic Process]
+    A model of a system that evolves over time or space in a random unpredictable manner.
+\end{definition}
+
+\begin{definition}[Covariance]
+A measure of the correlation between two or more sets of random variables
+\begin{align}
+\operatorname{cov}(X,Y) &= E[(X - \mu_x)(Y - \mu_y)] \\
+                        &= E[XY] - \mu_x\mu_y
+\label{eq:covariance}
+\end{align}
+where $\mu_x$ and $\mu_y$ are the means of $X$ and $Y$ and $E$ is the expectation. To make this make more sense,
+we can derive the more intuitive correlation from covariance by:
+\begin{equation}
+\operatorname{cor}(X,Y) = \frac{\operatorname{cov}(X,Y)}{\sigma_x\sigma_y}
+\label{eq:correlation}
+\end{equation}
+(TODO) I still need to work on understanding what this means exactly.
+\end{definition}
+
+\entry{2026-06-29}{Multi-Fidelity Analysis: Using multiple datasets for better approximations}
+\subentry{The general idea}
+In the event that we have multiple datasets describing a process,
+it is useful to combine data from an expensive function and a cheap approximation of 
+said function. We want to sample the expensive function at a select few points that overlap with
+the sampling of the cheap function ($X_e \subset X_c$). Then we can try to correct points from $Y_c$
+with:
+\begin{equation}
+  y_e = Z_py_c + Z_d
+  \label{eq:multi-fidelity}
+\end{equation}
+
+\subentry{Co-Kriging}
+
+From Forrester:
+\begin{quotation}
+    Here we use the auto-regressive model of Kennedy and O'Hagan (2000), which
+    assumes that
+    \begin{equation*}
+      \operatorname{cov}\{Y_e(x_i),\, Y_c(x) \mid Y_c(x_i)\} = 0
+      \quad \forall\, x \neq x_i.
+    \end{equation*}
+    This means that no more can be learnt about $Y_e(x_i)$ from the cheaper code if
+    the value of the expensive function at $x_i$ is known (this is known as a
+    \emph{Markov property} which, in essence, says we assume that the expensive
+    simulation is correct and any inaccuracies lie wholly in the cheaper
+    simulation).
+\end{quotation}
+
+As in regular Kriging, we treat our expensive function as a stochastic process $Z_e$, 
+\begin{equation}
+  Z_e(\mathbf{x}) = \rho Z_c(\mathbf{x}) + Z_d(\mathbf{x})
+  \label{eq:co-kriging}
+\end{equation}
+
+\begin{definition}[Maximum Likelihood Estimation (MLE)]
+    We can either find the probability of the data given parameters, or find
+    the parameters given the data. In the case of our Kriging models, we aim to estimate the parameters based on
+    our limited data in order to create our surrogate.
+\end{definition}
+
+
+
 \standing{Papers}
 \subentry{Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}
 

@@ -1,8 +1,8 @@
-PWD /home/ian/code/research/documenting/rceu-lab-journal
+PWD /home/ian/code/documenting/rceu-lab-journal
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/ian/code/research/documenting/rceu-lab-journal/learning.tex
+INPUT /home/ian/code/documenting/rceu-lab-journal/learning.tex
 OUTPUT learning.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -733,6 +733,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 OUTPUT learning.toc
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -748,8 +750,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT ./images/full_factorial.png
 INPUT ./images/full_factorial.png
@@ -765,6 +765,10 @@ INPUT ./images/space_filling_latin_hypercube.png
 INPUT ./images/space_filling_latin_hypercube.png
 INPUT ./images/space_filling_latin_hypercube.png
 INPUT ./images/space_filling_latin_hypercube.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/rm-lmbx8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/rm-lmbx6.tfm
 INPUT learning.aux
 INPUT ./learning.out
 INPUT ./learning.out
@@ -779,6 +783,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
