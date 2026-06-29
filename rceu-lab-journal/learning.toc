@@ -10,4 +10,6 @@
 \contentsline {subsection}{\numberline {2.2}Co-Kriging}{10}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Papers}{11}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Definition Table}{11}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Abstract}{11}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}{11}{subsection.3.2}%

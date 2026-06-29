@@ -38,6 +38,8 @@
 % --- hyperref makes the table of contents and references clickable. Load it LAST. ---
 \usepackage[colorlinks=true, linkcolor=blue!50!black, urlcolor=blue!50!black]{hyperref}
 
+\usepackage{tabularx}
+\usepackage{booktabs}
 % ------------------------------------------------------------
 %  Custom tools
 % ------------------------------------------------------------
@@ -60,6 +62,10 @@
 \theoremstyle{definition}
 \newtheorem{keyresult}{Key result}
 \newtheorem{definition}{Definition}
+\newtheorem*{mytake}{My take}
+\newtheorem*{paraphrase}{In my words}
+\newtheorem*{question}{Open question}
+\newtheorem*{connection}{Connects to}
 % ------------------------------------------------------------
 \title{Learning Journal}
 \author{Ian Silber}                      % put your name here if you like
@@ -418,6 +424,39 @@ As in regular Kriging, we treat our expensive function as a stochastic process $
 
 \standing{Papers}
 \subentry{Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}
+
+% \subentry{Notation}
+
+% \begin{center}
+% \begin{tabularx}{\linewidth}{l X}
+%   \toprule
+%   Symbol & Meaning \\
+%   \midrule
+%   $Y_e(x)$ & Output of the expensive simulation at input $x$ \\
+%   $Y_c(x)$ & Output of the cheaper simulation at input $x$ \\
+%   $\rho$   & Regression parameter linking the cheap and expensive codes \\
+%   \bottomrule
+% \end{tabularx}
+% \end{center}
+
+\subsubentry{Definition Table}
+
+
+\begin{description}
+  \item[Heliosheath (HS)] is the region of the heliosphere between the termination shock and the heliopause.
+  \item[Spatial effects] relate to persistent plasma properties affecting particle transport over large areas.
+  \item[Temporal effects] are transient modulation events and solar cycle variations advected outward
+    from the Sun, generally lagging 1-2 yr from their creation to their arrival
+    at the HS.
+\end{description}
+
+\subsubentry{Abstract}
+GCR transport appears to be dominated by large, transient modulation structures
+advected from the Sun, while the role of spatially dictated diffusion is likely secondary.
+
+\begin{mytake}
+What I think this actually means, or why it matters to me.
+\end{mytake}
 
 \subentry{Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}
 
