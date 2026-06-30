@@ -40,12 +40,18 @@
 
 \usepackage{tabularx}
 \usepackage{booktabs}
+
+\usepackage{etoc}
+\usepackage{csquotes}
 % ------------------------------------------------------------
 %  Custom tools
 % ------------------------------------------------------------
 
 % A top-level heading with no date — for standing sections like the papers list.
 \newcommand{\standing}[1]{\clearpage\section{#1}}
+
+% A paper: a subsection that starts on its own page (for the Papers section).
+\newcommand{\paper}[1]{\clearpage\subsection{#1}}
 
 % An "entry" is just a section with a date built into the heading,
 % so each one shows up in the table of contents automatically.
@@ -359,6 +365,17 @@ Which generates the below sampling plan:
 This should be below the figure
 \subentry{Kriging: A special form of RBF}
 
+\begin{definition}[Symmetric Positive Definite (SPD) Matrix]
+  A real $n \times n$ matrix $A$ is symmetric positive definite if it is
+  symmetric ($A = A^T$) and
+  \[
+    x^T A x > 0 \quad \forall\, x.
+  \]
+  $A$ has a unique Cholesky factorization $A = R^TR$, where $R$ is upper triangular with positive diagonal elements.
+  \\
+  $A$ has positive eigenvalues
+\end{definition}
+
 \begin{definition}[Stochastic Process]
     A model of a system that evolves over time or space in a random unpredictable manner.
 \end{definition}
@@ -392,38 +409,35 @@ with:
 \end{equation}
 
 \subentry{Co-Kriging}
-
 From Forrester:
-\begin{quotation}
-    Here we use the auto-regressive model of Kennedy and O'Hagan (2000), which
-    assumes that
-    \begin{equation*}
-      \operatorname{cov}\{Y_e(x_i),\, Y_c(x) \mid Y_c(x_i)\} = 0
-      \quad \forall\, x \neq x_i.
-    \end{equation*}
-    This means that no more can be learnt about $Y_e(x_i)$ from the cheaper code if
-    the value of the expensive function at $x_i$ is known (this is known as a
-    \emph{Markov property} which, in essence, says we assume that the expensive
-    simulation is correct and any inaccuracies lie wholly in the cheaper
-    simulation).
-\end{quotation}
-
-As in regular Kriging, we treat our expensive function as a stochastic process $Z_e$, 
+\begin{displayquote}[Forrester et al., 2008]
+  Here we use the auto-regressive model of Kennedy and O'Hagan (2000), which
+  assumes that
+  \begin{equation*}
+    \operatorname{cov}\{Y_e(x_i),\, Y_c(x) \mid Y_c(x_i)\} = 0
+    \quad \forall\, x \neq x_i.
+  \end{equation*}
+  This means that no more can be learnt about $Y_e(x_i)$ from the cheaper code if
+  the value of the expensive function at $x_i$ is known (this is known as a
+  \emph{Markov property} which, in essence, says we assume that the expensive
+  simulation is correct and any inaccuracies lie wholly in the cheaper
+  simulation).
+\end{displayquote}
+As in regular Kriging, we treat our expensive function as a stochastic process $Z_e$,
 \begin{equation}
   Z_e(\mathbf{x}) = \rho Z_c(\mathbf{x}) + Z_d(\mathbf{x})
   \label{eq:co-kriging}
 \end{equation}
+
+Basically, we are modeling the expensive function as our cheap function multiplied by some
+correction factor $\rho$ plus a separate difference model $Z_d$ that estimates the difference
+between our cheap and expensive function at a point.
 
 \begin{definition}[Maximum Likelihood Estimation (MLE)]
     We can either find the probability of the data given parameters, or find
     the parameters given the data. In the case of our Kriging models, we aim to estimate the parameters based on
     our limited data in order to create our surrogate.
 \end{definition}
-
-
-
-\standing{Papers}
-\subentry{Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}
 
 % \subentry{Notation}
 
@@ -439,9 +453,13 @@ As in regular Kriging, we treat our expensive function as a stochastic process $
 % \end{tabularx}
 % \end{center}
 
+\standing{Papers}
+\etocsetnexttocdepth{subsection}
+\localtableofcontents
+
+\paper{Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}
+
 \subsubentry{Definition Table}
-
-
 \begin{description}
   \item[Heliosheath (HS)] is the region of the heliosphere between the termination shock and the heliopause.
   \item[Spatial effects] relate to persistent plasma properties affecting particle transport over large areas.
@@ -454,10 +472,14 @@ As in regular Kriging, we treat our expensive function as a stochastic process $
 GCR transport appears to be dominated by large, transient modulation structures
 advected from the Sun, while the role of spatially dictated diffusion is likely secondary.
 
-\begin{mytake}
-What I think this actually means, or why it matters to me.
-\end{mytake}
+\begin{question}
+What is spatially dictated diffusion?
+\end{question}
 
-\subentry{Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}
+\paper{Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}
+
+\paper{M. C. Kennedy and A. O'Hagan (2000) --- Predicting the output from a complex computer code}
+
+\paper{Forrester et al. (2007) --- Multi-fidelity optimization via surrogate modelling}
 
 \end{document}

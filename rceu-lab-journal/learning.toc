@@ -1,3 +1,4 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \contentsline {section}{\numberline {1}Catching up: What I have learned during my first month}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Sampling Plans: Full Factorial, Random Latin Hypercubes, and Space Filling RLHCs}{2}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Full Factorial}{2}{subsubsection.1.1.1}%
@@ -9,7 +10,10 @@
 \contentsline {subsection}{\numberline {2.1}The general idea}{10}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Co-Kriging}{10}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Papers}{11}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}{11}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Definition Table}{11}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Abstract}{11}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}{11}{subsection.3.2}%
+\etoc@startlocaltoc {2}
+\contentsline {subsection}{\numberline {3.1}Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Definition Table}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Abstract}{12}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}{13}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}M. C. Kennedy and A. O'Hagan (2000) --- Predicting the output from a complex computer code}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Forrester et al. (2007) --- Multi-fidelity optimization via surrogate modelling}{15}{subsection.3.4}%

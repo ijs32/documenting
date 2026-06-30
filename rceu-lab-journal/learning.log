@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.22)  29 JUN 2026 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.6.25)  30 JUN 2026 11:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/ian/code/research/documenting/rceu-lab-journal/learning.tex
-(/home/ian/code/research/documenting/rceu-lab-journal/learning.tex
+**/home/ian/code/documenting/rceu-lab-journal/learning.tex
+(/home/ian/code/documenting/rceu-lab-journal/learning.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -405,38 +405,131 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count311
 \@lastruleclass=\count312
 \@thisrulewidth=\dimen192
+) (/usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
+Package: etoc 2023/03/01 v1.2 Completely customisable TOCs (JFB)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count313
+\mult@box=\box67
+\multicol@leftmargin=\dimen193
+\c@unbalance=\count314
+\c@collectmore=\count315
+\doublecol@number=\count316
+\multicoltolerance=\count317
+\multicolpretolerance=\count318
+\full@width=\dimen194
+\page@free=\dimen195
+\premulticols=\dimen196
+\postmulticols=\dimen197
+\multicolsep=\skip59
+\multicolbaselineskip=\skip60
+\partial@page=\box68
+\last@line=\box69
+\maxbalancingoverflow=\dimen198
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\c@minrows=\count319
+\c@columnbadness=\count320
+\c@finalcolumnbadness=\count321
+\last@try=\dimen199
+\multicolovershoot=\dimen256
+\multicolundershoot=\dimen257
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count322
 )
-\c@keyresult=\count313
-\c@definition=\count314
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 74.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 74.
+\Etoc@toctoks=\toks34
+\c@etoc@tocid=\count323
+\etoc@framed@titlebox=\box112
+\etoc@framed@contentsbox=\box113
+) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count324
+\csq@gtype=\count325
+\csq@glevel=\count326
+\csq@qlevel=\count327
+\csq@maxlvl=\count328
+\csq@tshold=\count329
+\csq@ltx@everypar=\toks35
+ (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+\c@keyresult=\count330
+\c@definition=\count331
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 80.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 80.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count315
-\l__pdf_internal_box=\box67
+\l__color_backend_stack_int=\count332
+\l__pdf_internal_box=\box114
 ) (./learning.aux)
 \openout1 = `learning.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -475,117 +568,125 @@ LaTeX Font Info:    ... okay on input line 74.
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 74.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 80.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen193
-\scratchbox=\box68
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen194
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count333
+\scratchdimen=\dimen258
+\scratchbox=\box115
+\nofMPsegments=\count334
+\nofMParguments=\count335
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen259
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
+\everyMPtoPDFconversion=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count322
-Package hyperref Info: Link coloring ON on input line 74.
+\c@lstlisting=\count339
+Package hyperref Info: Link coloring ON on input line 80.
  (./learning.out) (./learning.out)
 \@outlinefile=\write3
 \openout3 = `learning.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 76.
+\Etoc@tf=\read2
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 76.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 76.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 76.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 76.
+(Font)              <12> on input line 82.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 76.
+(Font)              <8> on input line 82.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 76.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+(Font)              <6> on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./learning.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 2.
 )
 \tf@toc=\write4
 \openout4 = `learning.toc'.
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 83.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-Overfull \hbox (1.76726pt too wide) in paragraph at lines 83--83
+Overfull \hbox (1.76726pt too wide) in paragraph at lines 89--89
 []\T1/lmr/bx/n/14.4 2026-06-25 \T1/lmr/m/it/14.4 Catch-ing up: What I have learned dur-ing my first month 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 91.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 97.
 (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 99.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 105.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<./images/full_factorial.png, id=138, 684.3969pt x 682.2288pt>
+<./images/full_factorial.png, id=151, 684.3969pt x 682.2288pt>
 File: ./images/full_factorial.png Graphic file (type png)
 <use ./images/full_factorial.png>
-Package pdftex.def Info: ./images/full_factorial.png  used on input line 143.
+Package pdftex.def Info: ./images/full_factorial.png  used on input line 149.
 (pdftex.def)             Requested size: 452.9679pt x 451.5424pt.
  [3 <./images/full_factorial.png>] [4{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [5] [6]
-<./images/space_filling_latin_hypercube.png, id=323, 684.3969pt x 682.2288pt>
+<./images/space_filling_latin_hypercube.png, id=335, 684.3969pt x 682.2288pt>
 File: ./images/space_filling_latin_hypercube.png Graphic file (type png)
 <use ./images/space_filling_latin_hypercube.png>
-Package pdftex.def Info: ./images/space_filling_latin_hypercube.png  used on input line 353.
+Package pdftex.def Info: ./images/space_filling_latin_hypercube.png  used on input line 359.
 (pdftex.def)             Requested size: 452.9679pt x 451.5424pt.
  [7] [8 <./images/space_filling_latin_hypercube.png>] [9] [10
 
 ] [11
 
+] [12
+
+] [13
+
+] [14
+
+] [15
+
 ] (./learning.aux)
 Package rerunfilecheck Info: File `learning.out' has not changed.
-(rerunfilecheck)             Checksum: A2956D5F14E6CAB8D3CA42377D4986AB;3973.
+(rerunfilecheck)             Checksum: 0F904F60323CFFA820F5A58831B9452E;5004.
  ) 
 Here is how much of TeX's memory you used:
- 17134 strings out of 476041
- 314717 string characters out of 5793174
+ 18468 strings out of 476034
+ 337356 string characters out of 5792864
  2182388 words of memory out of 6000000
- 37113 multiletter control sequences out of 15000+600000
+ 38425 multiletter control sequences out of 15000+600000
  574957 words of font info for 72 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 75i,8n,77p,620b,2565s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,77p,644b,2613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on learning.pdf (11 pages, 458995 bytes).
+Output written on learning.pdf (15 pages, 465187 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 249 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 259 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
