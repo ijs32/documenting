@@ -68,7 +68,7 @@
 \theoremstyle{definition}
 \newtheorem{keyresult}{Key result}
 \newtheorem{definition}{Definition}
-\newtheorem*{mytake}{My take}
+\newtheorem*{thoughts}{Thoughts}
 \newtheorem*{paraphrase}{In my words}
 \newtheorem*{question}{Open question}
 \newtheorem*{connection}{Connects to}
@@ -438,6 +438,64 @@ between our cheap and expensive function at a point.
     the parameters given the data. In the case of our Kriging models, we aim to estimate the parameters based on
     our limited data in order to create our surrogate.
 \end{definition}
+
+\subentry{Co-Kriging -- sampling plan revisited}
+From Forrester et al. (2007), our sampled points are:
+\begin{equation}
+  \mathbf{X} = \begin{pmatrix} \mathbf{X_c} \\ \mathbf{X_e} \end{pmatrix} = (x_c^{(1)},...,x_c^{(n_c)},x_e^{(1)},...,x_e^{(n_e)})^T
+  \label{eq:co-kriging-sampling}
+\end{equation}
+The difficulty is that $$X_e \subset X_c$$
+meaning we need to generate a random latin hypercube for our cheap points, and then pick the optimal subset of expensive points.
+
+\begin{thoughts}
+I think the easiest way to do this in code is to generate the optimal sampling plan for the subset, and then add points.
+The problem is that we need to be able to iterate over our sample set pairing one expensive sample point to one cheap sample point.
+I am trying to come up with an elegant solution that doesn't involve sorting the sample points in some messy way. Maybe I should just add
+points based on the Morris-Mitchell criterion one at a time? How can I pick a new point that maximizes distance from existing points?
+OK, I changed my mind, I think the optimal way to do this is finding a subset. If I try adding new points there is simply no way to ensure I have found the best plan.
+If I take a subset, I run into a similar problem. Since my expensive points must be a subset, I am not able to perturb the points, which means they will likely not be
+the best plan.
+
+\end{thoughts}
+
+Here's what I came up with, I believe it is an accurate implementation of the exchange algorithm set out in Forrester et al. (2007) \S 4. 
+
+\begin{lstlisting}
+
+def find_subset(cube: np.ndarray, n: int, q: int = 2, iter: int = 1) -> np.ndarray:
+    rng = np.random.default_rng()
+
+    X_tracker = {
+        "phi": math.inf,
+        "X": np.empty([])
+    }
+
+    for _ in range(iter):
+        # restart to avoid local minima
+        X_best   = rng.choice(cube, size=n, replace=False)
+        phi_best = mm_phiq(X_best, q)
+
+        if phi_best < X_tracker["phi"]:
+            X_tracker["phi"] = phi_best
+            X_tracker["X"]   = X_best
+
+        for i in range(n):
+            # iterate over points in our subset
+            X_test = X_tracker["X"].copy()
+            
+            for point in cube:
+                # try each point from larger sample set
+                X_test[i] = point
+                phi_best  = mm_phiq(X_test, q)
+
+                if phi_best < X_tracker["phi"]:
+                    X_tracker["phi"] = phi_best
+                    X_tracker["X"]   = X_test
+        
+    return X_tracker["X"]
+    
+\end{lstlisting}
 
 % \subentry{Notation}
 
