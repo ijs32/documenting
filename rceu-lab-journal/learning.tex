@@ -376,6 +376,12 @@ This should be below the figure
   $A$ has positive eigenvalues
 \end{definition}
 
+\begin{definition}[Maximum Likelihood Estimation (MLE)]
+    We can either find the probability of the data given parameters, or find
+    the parameters given the data. In the case of our Kriging models, we aim to estimate the parameters based on
+    our limited data in order to create our surrogate.
+\end{definition}
+
 \begin{definition}[Stochastic Process]
     A model of a system that evolves over time or space in a random unpredictable manner.
 \end{definition}
@@ -433,11 +439,36 @@ Basically, we are modeling the expensive function as our cheap function multipli
 correction factor $\rho$ plus a separate difference model $Z_d$ that estimates the difference
 between our cheap and expensive function at a point.
 
-\begin{definition}[Maximum Likelihood Estimation (MLE)]
-    We can either find the probability of the data given parameters, or find
-    the parameters given the data. In the case of our Kriging models, we aim to estimate the parameters based on
-    our limited data in order to create our surrogate.
-\end{definition}
+It helps me to see the final product and then dissect the parts. To use our co-kriging model to estimate
+a point $x^{(n_e + 1)}$ we evaluate:
+
+\begin{equation}
+  \hat{y}_e\!\left(x^{(n_e+1)}\right)
+    = \hat{\mu} + \mathbf{c}^T \mathbf{C}^{-1}\left(\mathbf{y} - \mathbf{1}\hat{\mu}\right)
+  \label{eq:co-kriging-evaluate}
+\end{equation}
+
+Where:
+\begin{description}
+  \item[$\hat{\mu}$] the estimated global mean of the co-Kriging process
+  \item[$\mathbf{c}$] a column vector of correlations between the new point $x^{(n_e+1)}$ and the observed points
+  $$\mathbf{c} = 
+  \begin{pmatrix} 
+    \hat{\rho}\hat{\sigma}^2\psi_c(\mathbf{X}_c,x^{(n+1)}) \\ 
+    \hat{\rho}^2\hat{\sigma}^2\psi_c(\mathbf{X_e},x^{(n+1)}) + \hat{\sigma}^2\psi_d(\mathbf{X_e},x^{(n+1)})
+  \end{pmatrix}$$
+  \item[$\mathbf{C}$] the correlation matrix of the observed points
+  $$\mathbf{C} = 
+  \begin{pmatrix} 
+    \sigma^2\mathbf{\Psi}_c(\mathbf{X}_c,\mathbf{X}_c) &\rho\sigma^2\mathbf{\Psi}_c(\mathbf{X}_c,\mathbf{X}_e) \\ 
+    \rho\sigma_c^2\mathbf{\Psi}_c(\mathbf{X}_e,\mathbf{X}_c) & \rho^2\sigma^2\mathbf{\Psi}_c(\mathbf{X}_e,\mathbf{X}_e) + \sigma^2\mathbf{\Psi}_d(\mathbf{X_e},\mathbf{X}_e)
+  \end{pmatrix}$$
+  \item[$\mathbf{y}$] the vector of observed responses (cheap and expensive stacked)
+  \item[$\mathbf{1}$] a column vector of ones, of the same length as $\mathbf{y}$
+  \item[$\psi$ or $\mathbf{\Psi}$] is a column vector or matrix calculated at each point with. Optimal theta values are found 
+  for each dimension and for both cheap points and expensive points ($\psi_d$)
+    $$\psi^{(i)} = \exp{(-\sum_{j=1}^{k}\hat{\theta}_{j(\text{c or d})}\|x_j^{(n+1)} - x_j^{(i)}\|)}$$
+\end{description}
 
 \subentry{Co-Kriging -- sampling plan revisited}
 From Forrester et al. (2007), our sampled points are:

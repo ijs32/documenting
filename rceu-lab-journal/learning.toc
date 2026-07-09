@@ -9,12 +9,12 @@
 \contentsline {section}{\numberline {2}Multi-Fidelity Analysis: Using multiple datasets for better approximations}{10}{section.2}%
 \contentsline {subsection}{\numberline {2.1}The general idea}{10}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Co-Kriging}{10}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Co-Kriging -- sampling plan revisited}{10}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Papers}{12}{section.3}%
+\contentsline {subsection}{\numberline {2.3}Co-Kriging -- sampling plan revisited}{11}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Papers}{13}{section.3}%
 \etoc@startlocaltoc {2}
-\contentsline {subsection}{\numberline {3.1}Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}{13}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Definition Table}{13}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Abstract}{13}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}M. C. Kennedy and A. O'Hagan (2000) --- Predicting the output from a complex computer code}{15}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Forrester et al. (2007) --- Multi-fidelity optimization via surrogate modelling}{16}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.1}Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}{14}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Definition Table}{14}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Abstract}{14}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}M. C. Kennedy and A. O'Hagan (2000) --- Predicting the output from a complex computer code}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Forrester et al. (2007) --- Multi-fidelity optimization via surrogate modelling}{17}{subsection.3.4}%
