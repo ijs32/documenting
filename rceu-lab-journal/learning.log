@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.6.25)  9 JUL 2026 10:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.6.25)  13 JUL 2026 09:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,7 +660,12 @@ Package pdftex.def Info: ./images/space_filling_latin_hypercube.png  used on inp
 (pdftex.def)             Requested size: 452.9679pt x 451.5424pt.
  [7] [8 <./images/space_filling_latin_hypercube.png>] [9] [10
 
-] [11] [12] [13
+] [11]
+Overfull \hbox (24.98425pt too wide) in paragraph at lines 550--554
+[]\T1/lmtt/m/n/10.95 find_subset \T1/lmr/m/n/10.95 works to find the best sub-sam-ple of our orig-i-nal sam-pling plan. Then, \T1/lmtt/m/n/10.95 align_subset
+ []
+
+[12] [13
 
 ] [14
 
@@ -675,18 +680,18 @@ Package rerunfilecheck Info: File `learning.out' has not changed.
 (rerunfilecheck)             Checksum: ECDB5E39FCE75C095BF26F191AE56070;5257.
  ) 
 Here is how much of TeX's memory you used:
- 18521 strings out of 476034
- 338086 string characters out of 5792864
+ 18552 strings out of 476034
+ 338513 string characters out of 5792864
  2182388 words of memory out of 6000000
- 38439 multiletter control sequences out of 15000+600000
+ 38451 multiletter control sequences out of 15000+600000
  577949 words of font info for 73 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  75i,8n,77p,644b,2613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on learning.pdf (17 pages, 502613 bytes).
+Output written on learning.pdf (17 pages, 505016 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
- 297 named destinations out of 1000 (max. 500000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 316 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
