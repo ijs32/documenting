@@ -15,6 +15,8 @@
 \contentsline {subsection}{\numberline {3.1}Guzman et al. (2026) --- Toward Explaining GCR Modulation in a Dynamic Heliosheath}{14}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Definition Table}{14}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Abstract}{14}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Analytic Heliosphere Model}{14}{subsubsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.2}Puzzoni et al. (2026) --- A new web-based tool for GCR modulation in the heliosphere}{15}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Model equations}{15}{subsubsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.3}M. C. Kennedy and A. O'Hagan (2000) --- Predicting the output from a complex computer code}{16}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Forrester et al. (2007) --- Multi-fidelity optimization via surrogate modelling}{17}{subsection.3.4}%

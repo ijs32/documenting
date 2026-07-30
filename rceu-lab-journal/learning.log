@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.4.22)  14 JUL 2026 20:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.6.25)  20 JUL 2026 09:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/ian/code/research/documenting/rceu-lab-journal/learning.tex
-(/home/ian/code/research/documenting/rceu-lab-journal/learning.tex
+**/home/ian/code/documenting/rceu-lab-journal/learning.tex
+(/home/ian/code/documenting/rceu-lab-journal/learning.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -648,13 +648,13 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<./images/full_factorial.png, id=156, 684.3969pt x 682.2288pt>
+<./images/full_factorial.png, id=166, 684.3969pt x 682.2288pt>
 File: ./images/full_factorial.png Graphic file (type png)
 <use ./images/full_factorial.png>
 Package pdftex.def Info: ./images/full_factorial.png  used on input line 150.
 (pdftex.def)             Requested size: 452.9679pt x 451.5424pt.
  [3 <./images/full_factorial.png>] [4{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [5] [6]
-<./images/space_filling_latin_hypercube.png, id=340, 684.3969pt x 682.2288pt>
+<./images/space_filling_latin_hypercube.png, id=350, 684.3969pt x 682.2288pt>
 File: ./images/space_filling_latin_hypercube.png Graphic file (type png)
 <use ./images/space_filling_latin_hypercube.png>
 Package pdftex.def Info: ./images/space_filling_latin_hypercube.png  used on input line 360.
@@ -678,21 +678,21 @@ Overfull \hbox (24.98425pt too wide) in paragraph at lines 551--555
 
 ] (./learning.aux)
 Package rerunfilecheck Info: File `learning.out' has not changed.
-(rerunfilecheck)             Checksum: ECDB5E39FCE75C095BF26F191AE56070;5257.
+(rerunfilecheck)             Checksum: 175221408030F8C85AF7D04D9AD9D071;5607.
  ) 
 Here is how much of TeX's memory you used:
- 18561 strings out of 476041
- 338630 string characters out of 5793174
+ 18565 strings out of 476034
+ 338683 string characters out of 5792864
  2182388 words of memory out of 6000000
- 38458 multiletter control sequences out of 15000+600000
+ 38461 multiletter control sequences out of 15000+600000
  577949 words of font info for 73 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 75i,8n,77p,653b,2613s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,77p,644b,2613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on learning.pdf (17 pages, 506284 bytes).
+Output written on learning.pdf (17 pages, 506438 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 317 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 655 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 319 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
